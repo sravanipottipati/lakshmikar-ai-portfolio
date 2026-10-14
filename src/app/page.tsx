@@ -68,14 +68,14 @@ export default function Home() {
       {/* Hero */}
       <section
         id="home"
-        className="relative isolate mx-auto max-w-7xl overflow-hidden px-6 pb-14 pt-14 sm:pt-18 lg:px-12 lg:pt-16"
+        className="relative isolate mx-auto max-w-7xl overflow-hidden px-6 pb-12 pt-10 sm:pt-14 lg:px-12 lg:pt-12"
       >
         
 
         <div className="pointer-events-none absolute inset-0 -z-10 opacity-[0.12]" style={{ backgroundImage: "linear-gradient(rgba(148,163,184,0.18) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,0.18) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
         <div className="pointer-events-none absolute right-0 top-10 -z-10 h-[450px] w-[450px] rounded-full bg-cyan-500/10 blur-[110px]" />
 
-        <div className="relative z-10 grid grid-cols-1 items-center gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:gap-10">
+        <div className="relative z-10 grid grid-cols-1 items-center gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-6">
         <div className="min-w-0">
           <div className="mb-7 inline-flex max-w-full items-center rounded-full border border-cyan-400/20 bg-cyan-400/[0.07] px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.16em] text-cyan-200 shadow-[0_0_35px_rgba(34,211,238,0.06)] sm:text-xs">
             Medical Imaging AI · Computer Vision · Multimodal Learning
@@ -131,17 +131,12 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative mx-auto w-full max-w-[350px] lg:max-w-[320px]">
-      {/* Single medical brain hologram behind the portrait */}
+        <div className="relative mx-auto w-full max-w-[350px] lg:max-w-[350px] lg:translate-y-6">
+      {/* Soft medical-AI glow behind the portrait */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -right-36 top-1/2 -z-10 hidden h-[460px] w-[400px] -translate-y-1/2 bg-contain bg-center bg-no-repeat opacity-75 lg:block"
-        style={{
-          backgroundImage: "url('/backgrounds/single-medical-brain.svg')",
-        }}
+        className="pointer-events-none absolute -inset-12 -z-10 rounded-full bg-gradient-to-br from-cyan-400/20 via-blue-500/15 to-violet-500/20 blur-[75px]"
       />
-
-
 <div
             aria-hidden="true"
             className="pointer-events-none absolute -inset-6 -z-10 rounded-[3rem] bg-gradient-to-br from-cyan-400/25 via-blue-500/15 to-violet-500/25 blur-[55px]"
@@ -166,7 +161,7 @@ export default function Home() {
                 className="h-2 w-2 shrink-0 rounded-full bg-emerald-400 shadow-[0_0_12px_rgba(52,211,153,0.5)]"
               />
               <span className="text-center text-xs font-semibold tracking-wide text-cyan-100 sm:text-sm">
-                AI Research · Computer Vision
+                AI Researcher
               </span>
             </div>
           </div>
