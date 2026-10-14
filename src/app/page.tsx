@@ -60,7 +60,8 @@ export default function Home() {
       >
         <div className="pointer-events-none absolute right-0 top-10 h-96 w-96 rounded-full bg-cyan-500/10 blur-[110px]" />
 
-        <div className="relative z-10 max-w-4xl">
+        <div className="relative z-10 grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+        <div className="min-w-0">
           <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-cyan-400/20 bg-cyan-400/5 px-4 py-2 text-xs font-medium tracking-widest text-cyan-300 uppercase">
             AI Research · Computer Vision · Multimodal Learning
           </div>
@@ -69,7 +70,7 @@ export default function Home() {
             Hello, I&apos;m
           </p>
 
-          <h1 className="text-5xl font-semibold leading-[1.08] tracking-tight sm:text-7xl lg:text-8xl">
+          <h1 className="text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl xl:text-6xl">
             Lakshmikar Reddy
             <span className="block bg-gradient-to-r from-white via-cyan-200 to-blue-500 bg-clip-text text-transparent">
               Polamreddy.
@@ -110,6 +111,11 @@ export default function Home() {
               Download CV ↓
             </a>
           </div>
+        </div>
+
+        <div className="mx-auto w-full max-w-[300px] overflow-hidden rounded-3xl border border-cyan-400/30 bg-slate-900 p-2 shadow-[0_0_60px_rgba(34,211,238,0.12)]">
+          <img src="/images/lakshmikar-profile.png" alt="Professional portrait of Lakshmikar Reddy Polamreddy" className="aspect-[3/4] w-full rounded-2xl object-cover object-top" />
+        </div>
         </div>
 
         <div className="relative z-10 mt-24 grid gap-8 border-t border-white/10 pt-10 sm:grid-cols-3">
