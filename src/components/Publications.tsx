@@ -185,7 +185,7 @@ export default function Publications() {
 
                 {paper.image ? (
                   <div className={`mt-3 flex items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-slate-50 p-2 ${
-                    index === 0 ? "h-[220px]" : "h-32"
+                    "h-[220px]"
                   }`}>
                     <button
                       type="button"
