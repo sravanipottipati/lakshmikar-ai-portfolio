@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#080b12] text-white">
       {/* Navigation */}
-      <header className="mx-auto flex max-w-7xl items-center justify-between px-6 py-7 lg:px-12">
+      <header className="sticky top-0 z-50 mx-auto flex max-w-7xl items-center justify-between border-b border-white/10 bg-[#080b12]/90 px-6 py-5 backdrop-blur-xl lg:px-12">
         <a href="#" className="text-xl font-bold tracking-tight">
           LR<span className="text-cyan-400">.</span>
         </a>
@@ -77,9 +77,9 @@ export default function Home() {
           </h1>
 
           <h2 className="mt-9 text-xl font-medium text-slate-200 sm:text-2xl">
-            AI/ML Research Scientist
+            AI Research Scientist
             <span className="text-cyan-400"> · </span>
-            PhD Researcher
+            Computer Vision · Multimodal AI
           </h2>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-400">
@@ -101,6 +101,13 @@ export default function Home() {
               className="rounded-full border border-slate-600 px-7 py-3.5 font-medium transition hover:border-white"
             >
               Connect With Me
+            </a>
+            <a
+              href="/documents/Lakshmikar_Polamreddy_CV.pdf"
+              download="Lakshmikar_Polamreddy_CV.pdf"
+              className="rounded-full border border-cyan-400/50 px-7 py-3.5 font-medium text-cyan-300 transition hover:bg-cyan-400/10"
+            >
+              Download CV ↓
             </a>
           </div>
         </div>
