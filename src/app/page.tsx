@@ -155,9 +155,19 @@ export default function Home() {
                   <span className="text-cyan-400">↗</span>
                 </div>
 
+                {project.title === "CG-Reasoner" ? (
+                  <div className="my-9 flex h-40 items-center justify-center overflow-hidden rounded-xl border border-cyan-400/10 bg-white p-2">
+                    <img
+                      src="/research/cg-reasoner-architecture.png"
+                      alt="CG-Reasoner model architecture"
+                      className="h-full w-full object-contain"
+                    />
+                  </div>
+                ) : (
                 <div className="my-9 flex h-40 items-center justify-center rounded-xl border border-cyan-400/10 bg-gradient-to-br from-blue-950 via-slate-900 to-cyan-950">
                   <div className="h-24 w-24 rounded-full border border-cyan-400/30 bg-cyan-400/10 shadow-[0_0_65px_rgba(34,211,238,0.18)]" />
                 </div>
+                )}
 
                 <p className="text-xs font-medium tracking-wider text-cyan-400 uppercase">
                   {project.category}
