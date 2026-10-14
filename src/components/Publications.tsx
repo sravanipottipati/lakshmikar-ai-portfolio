@@ -8,7 +8,8 @@ const publications = [
   },
   {
     title: "The Deficit of New Information in Diffusion Models: A Focus on Diverse Samples",
-    venue: "Information Fusion 2025",
+    venue: "Information Fusion 2026",
+    link: "https://doi.org/10.1016/j.inffus.2025.103857",
     category: "Generative AI",
     status: "Published",
   },
