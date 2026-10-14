@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import Publications from "@/components/Publications";
 
 
@@ -118,6 +119,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About Me */}
+      <About />
+
       {/* Research */}
       <section
         id="research"
@@ -213,6 +217,7 @@ export default function Home() {
 
       {/* Publications */}
       <Publications />
+
 
       {/* Contact */}
       <section
