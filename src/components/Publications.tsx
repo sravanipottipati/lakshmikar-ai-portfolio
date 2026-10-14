@@ -24,6 +24,7 @@ const publications: Publication[] = [
   },
   {
     title: "The Deficit of New Information in Diffusion Models: A Focus on Diverse Samples",
+    image: "/research/information-fusion-2025.jpg",
     venue: "Information Fusion 2025",
     link: "https://doi.org/10.1016/j.inffus.2025.103857",
     category: "Generative AI",
@@ -47,6 +48,7 @@ const publications: Publication[] = [
   },
   {
     title: "WD-Mamba: A W-Mamba Diffusion Model for Enhancing Image Synthesis",
+    image: "/research/wd-mamba-iconip-2026.jpeg",
     venue: "ICONIP 2026",
     category: "Generative AI",
     status: "Accepted",
