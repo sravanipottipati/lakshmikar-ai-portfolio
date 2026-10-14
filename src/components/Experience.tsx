@@ -1,7 +1,10 @@
 import Image from "next/image";
 const companyLogos: Record<string, string> = {
+  "Quantegy Analytics Inc.": "/logos/quantegy.svg",
   "Modali Consulting": "/logos/modali.png",
+  "Cyient Ltd.": "/logos/cyient.svg",
   "Tech Mahindra": "/logos/tech-mahindra.png",
+  "Infotech Enterprises IT Services Pvt Ltd": "/logos/infotech.svg",
   "Yeshiva University": "/logos/yeshiva-university.jpg",
 };
 
@@ -147,11 +150,26 @@ export default function Experience() {
             <h3 className="mb-5 text-[22px] font-semibold tracking-tight text-white">
               {group.type}
             </h3>
-            <div className="grid gap-5 lg:grid-cols-2">
+            <div className={`grid gap-5 ${
+                group.type === "Industry Experience"
+                  ? "md:grid-cols-2 xl:grid-cols-6"
+                  : "lg:grid-cols-2"
+              }`}>
               {group.items.map((item) => (
                 <article
                   key={`${item.role}-${item.organization}`}
-                  className="rounded-2xl border border-white/10 bg-gradient-to-br from-[#121d2d] to-[#0c1420] p-6 sm:p-7"
+                  className={`rounded-2xl border border-white/10 bg-gradient-to-br from-[#121d2d] to-[#0c1420] ${
+                    group.type === "Industry Experience" &&
+                    group.items.indexOf(item) < 2
+                      ? "p-4 sm:p-5"
+                      : "p-5 sm:p-6"
+                  } ${
+                    group.type === "Industry Experience"
+                      ? group.items.indexOf(item) < 2
+                        ? "xl:col-span-3"
+                        : "xl:col-span-2"
+                      : ""
+                  }`}
                 >
                   <p className="text-xs font-semibold uppercase tracking-wider text-cyan-300">
                     {item.period}
@@ -185,11 +203,21 @@ export default function Experience() {
                       </p>
                     </div>
                   </div>
-                  <ul className="mt-5 space-y-3">
+                  <ul className={
+                      group.type === "Industry Experience" &&
+                      group.items.indexOf(item) < 2
+                        ? "mt-4 space-y-2"
+                        : "mt-5 space-y-3"
+                    }>
                     {item.details.map((detail) => (
                       <li
                         key={detail}
-                        className="flex gap-3 text-sm leading-7 text-slate-400"
+                        className={`flex gap-3 text-sm text-slate-400 ${
+                          group.type === "Industry Experience" &&
+                          group.items.indexOf(item) < 2
+                            ? "leading-6"
+                            : "leading-7"
+                        }`}
                       >
                         <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-400" />
                         <span>{detail}</span>
@@ -211,15 +239,38 @@ export default function Experience() {
                   key={item.degree}
                   className="rounded-xl border border-white/15 bg-[#141e2d] p-5 transition-colors hover:border-cyan-400/30"
                 >
-                  <h4 className="text-base font-semibold text-white">
-                    {item.degree}
-                  </h4>
-                  <p className="mt-2 text-sm font-medium text-slate-300">
-                    {item.institution}
-                  </p>
-                  <p className="mt-2 text-sm text-slate-400">
-                    {item.period}
-                  </p>
+                  <div className="flex items-start gap-4">
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-white/[0.06]">
+                      {item.institution === "Yeshiva University" ? (
+                        <Image
+                          src="/logos/yeshiva-university.jpg"
+                          alt="Yeshiva University logo"
+                          width={48}
+                          height={48}
+                          className="h-full w-full object-contain"
+                        />
+                      ) : (
+                        <Image
+                          src="/logos/sv-university-emblem.png"
+                          alt="Sri Venkateswara University logo"
+                          width={48}
+                          height={48}
+                          className="h-full w-full object-contain"
+                        />
+                      )}
+                    </div>
+                    <div className="min-w-0">
+                      <h4 className="text-base font-semibold text-white">
+                        {item.degree}
+                      </h4>
+                      <p className="mt-2 text-sm font-medium text-slate-300">
+                        {item.institution}
+                      </p>
+                      <p className="mt-2 text-sm text-slate-400">
+                        {item.period}
+                      </p>
+                    </div>
+                  </div>
                 </article>
               ))}
             </div>
@@ -234,7 +285,6 @@ export default function Experience() {
                 {[
                   "AWS Certified Cloud Practitioner",
                   "Advanced Certificate Programme in Data Science — IIIT Bangalore",
-                  "Best Emerging Research Award — Future Technologies Conference, 2023",
                 ].map((item) => (
                   <div
                     key={item}

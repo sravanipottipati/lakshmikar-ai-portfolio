@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 500 560">
+<defs>
+  <radialGradient id="glow">
+    <stop offset="0" stop-color="#0891b2" stop-opacity=".38"/>
+    <stop offset="1" stop-color="#0891b2" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="brain" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#67e8f9"/>
+    <stop offset=".55" stop-color="#38bdf8"/>
+    <stop offset="1" stop-color="#6366f1"/>
+  </linearGradient>
+  <filter id="softGlow">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+</defs>
+
+<ellipse cx="250" cy="280" rx="235" ry="245" fill="url(#glow)"/>
+
+<g fill="none" stroke="url(#brain)"
+stroke-width="2.6" stroke-linecap="round"
+stroke-linejoin="round" filter="url(#softGlow)" opacity=".85">
+
+<!-- Single anatomical brain silhouette -->
+<path d="M135 343
+C85 325 74 273 92 239
+C73 208 91 164 126 152
+C132 113 165 89 200 98
+C222 69 265 67 290 91
+C328 77 363 103 367 137
+C407 145 422 184 404 215
+C426 247 412 288 385 303
+C373 341 342 357 312 352
+C281 376 248 365 229 346
+C196 365 159 362 135 343Z"/>
+
+<!-- Internal gyri and sulci -->
+<path d="M132 156 C167 174 164 206 144 226
+C119 248 130 282 156 296"/>
+<path d="M196 102 C184 133 205 151 232 157
+C266 164 276 187 256 211"/>
+<path d="M289 95 C279 128 300 148 327 153
+C355 160 365 181 346 205"/>
+<path d="M367 139 C337 149 330 179 349 202
+C370 228 357 252 330 262"/>
+<path d="M112 238 C144 229 169 249 167 273
+C164 301 190 318 214 308"/>
+<path d="M158 187 C194 177 212 195 202 224
+C194 245 211 260 233 252"/>
+<path d="M239 157 C217 183 230 205 258 215
+C283 223 291 248 273 268"/>
+<path d="M310 177 C288 194 299 219 320 227
+C342 236 344 265 321 280"/>
+<path d="M174 338 C191 313 216 318 231 338"/>
+<path d="M255 307 C274 283 301 287 313 315"/>
+<path d="M360 290 C342 306 325 300 312 286"/>
+<path d="M204 277 C222 266 246 275 251 299"/>
+
+<!-- Brain stem -->
+<path d="M226 347 C240 374 250 396 248 429
+C248 445 264 459 283 464"/>
+<path d="M278 356 C272 389 286 417 308 435"/>
+
+<!-- Cerebellum -->
+<path d="M310 345 C342 318 377 332 386 356
+C397 381 374 404 349 403
+C322 401 309 380 310 345Z"/>
+<path d="M320 360 C344 348 364 358 379 372"/>
+<path d="M324 377 C348 370 363 382 368 393"/>
+</g>
+</svg>
