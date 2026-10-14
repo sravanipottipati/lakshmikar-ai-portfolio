@@ -90,23 +90,23 @@ export default function Home() {
             and impactful applications.
           </p>
 
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-10 flex flex-wrap gap-3">
             <a
               href="#research"
-              className="rounded-full bg-cyan-400 px-7 py-3.5 font-semibold text-slate-950 transition hover:bg-cyan-300"
+              className="rounded-full bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
             >
               Explore My Research ↗
             </a>
             <a
               href="#contact"
-              className="rounded-full border border-slate-600 px-7 py-3.5 font-medium transition hover:border-white"
+              className="rounded-full border border-slate-600 px-5 py-3 font-medium transition hover:border-white"
             >
               Connect With Me
             </a>
             <a
               href="/documents/Lakshmikar_Polamreddy_CV.pdf"
               download="Lakshmikar_Polamreddy_CV.pdf"
-              className="rounded-full border border-cyan-400/50 px-7 py-3.5 font-medium text-cyan-300 transition hover:bg-cyan-400/10"
+              className="rounded-full border border-cyan-400/50 px-5 py-3 font-medium text-cyan-300 transition hover:bg-cyan-400/10"
             >
               Download CV ↓
             </a>
