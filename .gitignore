@@ -39,3 +39,21 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Local development backups
+*.backup-*.css
+*.backup-*.tsx
+*.backup-*.ts
+*.backup-*.jsx
+*.backup-*.js
+
+# Git configuration backups
+.gitignore.backup-*
+
+# Temporary research figure extraction
+/public/research/cg-reasoner-extracted/
+
+# Temporary, unverified company logo recreations
+/public/logos/cyient.svg
+/public/logos/quantegy.svg
+/public/logos/infotech.svg

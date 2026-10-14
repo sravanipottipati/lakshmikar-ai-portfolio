@@ -2,7 +2,7 @@ const publications = [
   {
     title: "CG-Reasoner: Centroid-Guided Positional Reasoning Segmentation for Medical Imaging with a Robust Visual-Text Consistency Metric",
     venue: "CVPR 2026",
-    link: "/research/cg-reasoner-paper.pdf",
+    link: "https://openaccess.thecvf.com/content/CVPR2026/papers/Polamreddy_CG-Reasoner_Centroid-Guided_Positional_Reasoning_Segmentation_for_Medical_Imaging_with_a_CVPR_2026_paper.pdf",
     category: "Computer Vision",
     status: "Published",
   },
@@ -15,7 +15,8 @@ const publications = [
   },
   {
     title: "Confident Pseudo-Labeled Diffusion Augmentation for Canine Cardiomegaly Detection",
-    venue: "WACV 2025",
+    venue: "WACV 2025 Workshop",
+    link: "https://openaccess.thecvf.com/content/WACV2025W/ImageQuality/papers/Zhang_Confident_Pseudo-labeled_Diffusion_Augmentation_for_Canine_Cardiomegaly_Detection_WACVW_2025_paper.pdf",
     category: "Medical AI",
     status: "Published",
   },
@@ -31,13 +32,27 @@ const publications = [
     category: "Generative AI",
     status: "Accepted",
   },
+  {
+    title: "Leapfrog Latent Consistency Model (LLCM) for Medical Images Generation",
+    venue: "ACM/IEEE CHASE 2025",
+    link: "https://www.computer.org/csdl/proceedings-article/chase/2025/153900a430/29j5RUxS97a",
+    category: "Generative AI",
+    status: "Published",
+  },
+  {
+    title: "LaksNet: An End-to-End Deep Learning Model for Self-Driving Cars in Udacity Simulator",
+    venue: "Future Technologies Conference 2023",
+    link: "https://link.springer.com/chapter/10.1007/978-3-031-47448-4_1",
+    category: "Computer Vision",
+    status: "Published",
+  },
 ];
 
 export default function Publications() {
   return (
     <section
       id="publications"
-      className="border-t border-white/10 bg-[#080b12] px-6 py-28 lg:px-12"
+      className="relative overflow-hidden border-t border-white/10 bg-[#080b12] px-6 py-28 lg:px-12"
     >
       <div className="mx-auto max-w-7xl">
         <p className="text-sm font-semibold uppercase tracking-widest text-cyan-400">
@@ -53,20 +68,20 @@ export default function Publications() {
           generative AI, and medical image analysis.
         </p>
 
-        <div className="mt-14 grid gap-5">
+        <div className="mt-14 grid gap-4">
           {publications.map((paper, index) => (
             <article
               key={paper.title}
-              className="group rounded-2xl border border-white/10 bg-[#111827] p-7 transition-all duration-300 hover:border-cyan-400/40 hover:bg-[#152033]"
+              className="group relative overflow-hidden rounded-[1.5rem] border border-white/10 bg-gradient-to-r from-[#151f31] via-[#111a2a] to-[#0d1420] p-7 shadow-[0_12px_35px_rgba(0,0,0,0.12)] transition-all duration-300 hover:-translate-y-0.5 hover:border-cyan-300/35 hover:shadow-[0_20px_55px_rgba(6,182,212,0.07)] sm:p-9"
             >
-              <div className="flex flex-col gap-5 md:flex-row md:items-start">
-                <span className="text-sm text-slate-500">
+              <div className="flex flex-col gap-5 md:flex-row md:items-start md:gap-7">
+                <span className="text-sm font-semibold tabular-nums tracking-widest text-cyan-300/65">
                   {String(index + 1).padStart(2, "0")}
                 </span>
 
                 <div className="flex-1">
                   <div className="mb-4 flex flex-wrap gap-3">
-                    <span className="rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium text-cyan-300">
+                    <span className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3.5 py-1.5 text-xs font-semibold tracking-wide text-cyan-300">
                       {paper.venue}
                     </span>
                     <span className="rounded-full border border-white/10 px-3 py-1 text-xs text-slate-300">
@@ -74,7 +89,7 @@ export default function Publications() {
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-semibold leading-snug text-white transition-colors group-hover:text-cyan-300 sm:text-2xl">
+                  <h3 className="max-w-4xl text-xl font-semibold leading-snug tracking-[-0.025em] text-white transition-colors duration-300 group-hover:text-cyan-100 sm:text-[1.45rem]">
                     {paper.title}
                   </h3>
 
@@ -87,7 +102,7 @@ export default function Publications() {
                       href={paper.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-4 inline-block font-medium text-cyan-400 hover:text-cyan-300"
+                      className="mt-5 inline-flex items-center rounded-full border border-cyan-400/20 bg-cyan-400/5 px-4 py-2 text-sm font-semibold text-cyan-300 transition hover:border-cyan-400/50 hover:bg-cyan-400/10"
                     >
                       View Paper ↗
                     </a>
