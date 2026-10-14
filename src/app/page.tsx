@@ -155,10 +155,10 @@ export default function Home() {
                   <span className="text-cyan-400">↗</span>
                 </div>
 
-                {project.title === "CG-Reasoner" || project.title === "MedNet & U²-ViT" ? (
+                {project.title === "CG-Reasoner" || project.title === "MedNet & U²-ViT" || project.title === "3DMuseReasoner" ? (
                   <div className="my-9 flex h-40 items-center justify-center overflow-hidden rounded-xl border border-cyan-400/10 bg-white p-2">
                     <img
-                      src={project.title === "CG-Reasoner" ? "/research/cg-reasoner-architecture.png" : "/research/mednet-architecture.png"}
+                      src={project.title === "CG-Reasoner" ? "/research/cg-reasoner-architecture.png" : project.title === "MedNet & U²-ViT" ? "/research/mednet-architecture.png" : "/research/3dmusereasoner-architecture.png"}
                       alt="CG-Reasoner model architecture"
                       className="h-full w-full object-contain"
                     />
