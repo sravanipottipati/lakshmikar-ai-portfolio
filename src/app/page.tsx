@@ -172,7 +172,7 @@ export default function Home() {
                   <div className="my-9 flex h-40 items-center justify-center overflow-hidden rounded-xl border border-cyan-400/10 bg-white p-2">
                     <img
                       src={project.title === "CG-Reasoner" ? "/research/cg-reasoner-architecture.png" : project.title === "MedNet & U²-ViT" ? "/research/mednet-architecture.png" : "/research/3dmusereasoner-architecture.png"}
-                      alt="CG-Reasoner model architecture"
+                      alt={`${project.title} model architecture`}
                       className="h-full w-full object-contain"
                     />
                   </div>
@@ -194,6 +194,26 @@ export default function Home() {
 
                 <div className="mt-8 border-t border-white/10 pt-5 text-sm text-slate-300">
                   {project.venue}
+                  {project.title === "MedNet & U²-ViT" && (
+                    <a
+                      href="https://github.com/LakshmikarPolamreddy/MedNet-U2-ViT"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-4 block font-medium text-cyan-400 hover:text-cyan-300"
+                    >
+                      View Code ↗
+                    </a>
+                  )}
+                  {project.title === "CG-Reasoner" && (
+                    <a
+                      href="/research/cg-reasoner-paper.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-4 block font-medium text-cyan-400 hover:text-cyan-300"
+                    >
+                      View Paper ↗
+                    </a>
+                  )}
                 </div>
               </article>
             ))}
