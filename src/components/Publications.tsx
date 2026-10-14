@@ -2,6 +2,7 @@ const publications = [
   {
     title: "CG-Reasoner: Centroid-Guided Positional Reasoning Segmentation for Medical Imaging with a Robust Visual-Text Consistency Metric",
     venue: "CVPR 2026",
+    link: "/research/cg-reasoner-paper.pdf",
     category: "Computer Vision",
     status: "Published",
   },
@@ -79,6 +80,17 @@ export default function Publications() {
                   <p className="mt-4 text-sm text-slate-400">
                     {paper.category}
                   </p>
+
+                  {"link" in paper && paper.link && (
+                    <a
+                      href={paper.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-4 inline-block font-medium text-cyan-400 hover:text-cyan-300"
+                    >
+                      View Paper ↗
+                    </a>
+                  )}
                 </div>
 
                 <span
