@@ -91,23 +91,23 @@ export default function Home() {
             real-world applications.
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center gap-3">
+          <div className="mt-8 grid grid-cols-2 items-center gap-3 sm:flex sm:flex-wrap">
             <a
               href="#publications"
-              className="rounded-full bg-cyan-300 px-6 py-3.5 text-sm font-semibold text-slate-950 shadow-[0_8px_35px_rgba(34,211,238,0.18)] transition hover:-translate-y-0.5 hover:bg-cyan-200 hover:shadow-[0_12px_40px_rgba(34,211,238,0.25)] sm:text-base"
+              className="flex items-center justify-center rounded-full bg-cyan-300 px-3 py-3.5 text-center text-xs font-semibold sm:px-6 sm:text-base text-slate-950 shadow-[0_8px_35px_rgba(34,211,238,0.18)] transition hover:-translate-y-0.5 hover:bg-cyan-200 hover:shadow-[0_12px_40px_rgba(34,211,238,0.25)] sm:text-base"
             >
               Explore My Research ↗
             </a>
             <a
               href="#contact"
-              className="rounded-full border border-slate-600 px-5 py-3 font-medium transition hover:border-white"
+              className="flex items-center justify-center rounded-full border border-slate-600 px-3 py-3 text-center text-xs font-medium transition hover:border-white sm:px-5 sm:text-base"
             >
               Connect With Me
             </a>
             <a
               href="/documents/Lakshmikar_Polamreddy_CV.pdf"
               download="Lakshmikar_Polamreddy_CV.pdf"
-              className="rounded-full border border-cyan-400/50 px-5 py-3 font-medium text-cyan-300 transition hover:bg-cyan-400/10"
+              className="col-span-2 mx-auto rounded-full border border-cyan-400/50 px-5 py-3 font-medium text-cyan-300 transition hover:bg-cyan-400/10 sm:col-auto sm:mx-0"
             >
               Download CV ↓
             </a>
