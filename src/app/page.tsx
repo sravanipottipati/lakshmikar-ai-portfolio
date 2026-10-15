@@ -1,3 +1,4 @@
+import MobileNavigation from "@/components/MobileNavigation";
 import Image from "next/image";
 import About from "@/components/About";
 import Publications from "@/components/Publications";
@@ -42,33 +43,12 @@ export default function Home() {
       </header>
 
       {/* Mobile navigation */}
-      <nav
-        aria-label="Mobile navigation"
-        className="sticky top-0 z-40 flex gap-6 overflow-x-auto border-b border-white/[0.08] bg-[#080b12]/95 px-6 py-3.5 text-sm font-medium text-slate-300 shadow-lg backdrop-blur-2xl md:hidden"
-      >
-        {[
-          ["Home", "#home"],
-          ["About", "#about"],
-          ["Experience", "#experience"],
-          ["Expertise", "#expertise"],
-          ["Research & Publications", "#publications"],
-          ["News & Recognition", "#recognition"],
-          ["Contact", "#contact"],
-        ].map(([label, href]) => (
-          <a
-            key={href}
-            href={href}
-            className="shrink-0 whitespace-nowrap transition-colors hover:text-cyan-300"
-          >
-            {label}
-          </a>
-        ))}
-      </nav>
+      <MobileNavigation />
 
       {/* Hero */}
       <section
         id="home"
-        className="relative isolate mx-auto max-w-7xl overflow-hidden px-6 pb-12 pt-10 sm:pt-14 lg:px-12 lg:pt-12"
+        className="relative isolate mx-auto max-w-7xl overflow-hidden px-6 pb-8 pt-8 sm:pb-12 sm:pt-14 lg:px-12 lg:pt-12"
       >
         
 
@@ -85,7 +65,7 @@ export default function Home() {
             Hello, I&apos;m
           </p>
 
-          <h1 className="text-[clamp(2.7rem,5.5vw,5.25rem)] font-semibold leading-[1.06] tracking-[-0.055em] text-white">
+          <h1 className="text-[clamp(2.5rem,5vw,4.75rem)] font-semibold leading-[1.06] tracking-[-0.055em] text-white">
             Lakshmikar Reddy
             <span className="block bg-gradient-to-r from-white via-cyan-200 to-blue-500 bg-clip-text text-transparent">
               Polamreddy.
@@ -93,6 +73,9 @@ export default function Home() {
           </h1>
 
           <div className="mt-6">
+            <p className="mb-3 text-base font-semibold tracking-wide text-cyan-300 sm:text-lg">
+              PhD in Computer Science and Mathematics
+            </p>
             <h2 className="text-xl font-semibold tracking-tight text-slate-100 sm:text-2xl">
               AI Research Scientist
             </h2>
@@ -168,18 +151,6 @@ export default function Home() {
         </div>
         </div>
 
-        <div className="relative z-10 mt-20 grid gap-8 border-t border-white/10 pt-10 sm:grid-cols-3 lg:mt-24">
-          {[
-            ["CVPR 2026", "Published Research"],
-            ["PhD", "Mathematics & Computer Science"],
-            ["AI + Industry", "Research & Applied Engineering"],
-          ].map(([value, label]) => (
-            <div key={value}>
-              <p className="text-2xl font-semibold text-white">{value}</p>
-              <p className="mt-2 text-sm text-slate-500">{label}</p>
-            </div>
-          ))}
-        </div>
       </section>
 
       {/* About Me */}
@@ -189,7 +160,7 @@ export default function Home() {
       {/* Expertise */}
       <section
         id="expertise"
-        className="relative mx-auto max-w-7xl px-6 py-24 sm:py-28 lg:px-12 lg:py-32"
+        className="relative mx-auto max-w-7xl px-6 py-12 sm:py-28 lg:px-12 lg:py-32"
       >
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
           Technical Foundation
@@ -294,24 +265,24 @@ export default function Home() {
       >
         <div className="pointer-events-none absolute left-1/2 top-0 h-96 w-[600px] -translate-x-1/2 rounded-full bg-cyan-500/10 blur-[120px]" />
 
-        <div className="relative mx-auto max-w-5xl overflow-hidden rounded-[2rem] border border-cyan-300/20 bg-gradient-to-br from-[#18283f] via-[#101a2b] to-[#0b1321] px-6 py-12 text-center shadow-[0_30px_100px_rgba(0,0,0,0.25),0_0_80px_rgba(34,211,238,0.045)] sm:px-12 sm:py-14">
+        <div className="relative mx-auto max-w-5xl overflow-hidden rounded-[2rem] border border-cyan-300/20 bg-gradient-to-br from-[#18283f] via-[#101a2b] to-[#0b1321] px-6 py-8 text-center shadow-[0_30px_100px_rgba(0,0,0,0.25),0_0_80px_rgba(34,211,238,0.045)] sm:px-12 sm:py-14">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
             Let&apos;s Connect
           </p>
 
-          <h2 className="mx-auto mt-6 max-w-3xl text-4xl font-semibold leading-[1.1] tracking-[-0.04em] text-white sm:text-5xl">
+          <h2 className="mx-auto mt-5 sm:mt-6 max-w-3xl text-4xl font-semibold leading-[1.1] tracking-[-0.04em] text-white sm:text-5xl">
             Let&apos;s build the future of
             <span className="block bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent">
               intelligent systems.
             </span>
           </h2>
 
-          <p className="mx-auto mt-7 max-w-2xl text-base leading-8 text-slate-400 sm:text-lg">
+          <p className="mx-auto mt-5 sm:mt-7 max-w-2xl text-base leading-8 text-slate-400 sm:text-lg">
             Open to research collaborations and opportunities in
             AI research, applied science, and computer vision.
           </p>
 
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+          <div className="mt-6 sm:mt-10 flex flex-wrap items-center justify-center gap-4">
             <a
               href="mailto:lakshmikarpolamreddy@gmail.com"
               className="rounded-full bg-cyan-400 px-7 py-3.5 font-semibold text-slate-950 transition hover:bg-cyan-300"
@@ -328,7 +299,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="mt-9 flex flex-wrap justify-center gap-3">
+          <div className="mt-6 sm:mt-9 flex flex-wrap justify-center gap-3">
             <a
               href="https://github.com/LakshmikarPolamreddy"
               target="_blank"
@@ -355,42 +326,16 @@ export default function Home() {
             </a>
           </div>
 
-          <p className="mt-9 break-all text-sm text-slate-400">
+          <p className="mt-6 sm:mt-9 break-all text-sm text-slate-400">
             lakshmikarpolamreddy@gmail.com
           </p>
         </div>
       </section>
 
-      <footer className="border-t border-white/[0.08] bg-[#080b12] px-6 py-8">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 text-center text-sm text-slate-500 lg:flex-row lg:text-left">
-          <p>© 2026 Lakshmikar Reddy Polamreddy. All rights reserved.</p>
-          <div className="flex flex-wrap justify-center gap-5">
-            <a
-              href="https://github.com/LakshmikarPolamreddy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition hover:text-cyan-300"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://www.linkedin.com/in/lakshmikar-reddy-polamreddy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition hover:text-cyan-300"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="https://scholar.google.com/citations?user=NQun8LoAAAAJ"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition hover:text-cyan-300"
-            >
-              Google Scholar
-            </a>
-          </div>
-        </div>
+      <footer className="border-t border-white/[0.08] bg-[#080b12] px-6 py-6">
+        <p className="mx-auto max-w-7xl text-center text-sm text-slate-500">
+          © 2026 Lakshmikar Reddy Polamreddy. All rights reserved.
+        </p>
       </footer>
     </main>
   );

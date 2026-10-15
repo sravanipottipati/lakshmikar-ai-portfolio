@@ -131,7 +131,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="border-t border-white/[0.08] bg-[#0a101b] px-6 py-20 sm:py-24 lg:px-12"
+      className="border-t border-white/[0.08] bg-[#0a101b] px-6 py-12 sm:py-20 lg:px-12"
     >
       <div className="mx-auto max-w-7xl">
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
@@ -146,7 +146,7 @@ export default function Experience() {
         </p>
 
         {roles.map((group) => (
-          <div key={group.type} className="mt-12">
+          <div key={group.type} className="mt-10">
             <h3 className="mb-5 text-[22px] font-semibold tracking-tight text-white">
               {group.type}
             </h3>
@@ -158,7 +158,7 @@ export default function Experience() {
               {group.items.map((item) => (
                 <article
                   key={`${item.role}-${item.organization}`}
-                  className={`rounded-2xl border border-white/10 bg-gradient-to-br from-[#121d2d] to-[#0c1420] ${
+                  className={`rounded-2xl border border-white/10 bg-gradient-to-br from-[#121d2d] to-[#0c1420] shadow-[0_12px_35px_rgba(0,0,0,0.12)] transition-all duration-300 hover:-translate-y-1 hover:border-cyan-300/25 hover:shadow-[0_18px_45px_rgba(0,0,0,0.22)] ${
                     group.type === "Industry Experience" &&
                     group.items.indexOf(item) < 2
                       ? "p-4 sm:p-5"
@@ -180,7 +180,7 @@ export default function Experience() {
                   <div className="mt-3 flex items-center gap-3">
                     <div
                       aria-hidden="true"
-                      className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/[0.05] text-lg font-bold text-cyan-300"
+                      className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-white/[0.08] p-1 text-lg font-bold text-cyan-300"
                     >
                       {companyLogos[item.organization] ? (
                          <Image
@@ -188,14 +188,14 @@ export default function Experience() {
                            alt={`${item.organization} logo`}
                            width={44}
                            height={44}
-                           className="h-full w-full rounded-xl object-contain"
+                           className="h-full w-full object-contain"
                          />
                        ) : (
                          item.organization.charAt(0)
                        )}
                     </div>
                     <div className="min-w-0">
-                      <p className="text-sm font-medium text-slate-300">
+                      <p className="text-sm font-semibold text-slate-200">
                         {item.organization}
                       </p>
                       <p className="mt-1 text-sm text-slate-500">
@@ -230,7 +230,7 @@ export default function Experience() {
           </div>
         ))}
 
-        <div className="mt-16 grid gap-10 lg:grid-cols-2">
+        <div className="mt-14 grid gap-10 lg:grid-cols-2">
           <div>
             <h3 className="text-[22px] font-semibold tracking-tight text-white">Education</h3>
             <div className="mt-5 space-y-3">

@@ -146,7 +146,7 @@ export default function Publications() {
   return (
     <section
       id="publications"
-      className="relative overflow-hidden border-t border-white/10 bg-[#080b12] px-6 py-24 lg:px-12"
+      className="relative overflow-hidden border-t border-white/10 bg-[#080b12] px-6 py-12 sm:py-24 lg:px-12"
     >
       <div className="mx-auto max-w-7xl">
         <p className="text-sm font-semibold uppercase tracking-widest text-cyan-400">

@@ -29,7 +29,7 @@ export default function Recognition() {
   return (
     <section
       id="recognition"
-      className="border-t border-white/[0.08] bg-[#0a101b] px-6 pb-20 pt-10 sm:pb-24 sm:pt-12 lg:px-12"
+      className="border-t border-white/[0.08] bg-[#0a101b] px-6 pb-12 pt-8 sm:pb-24 sm:pt-12 lg:px-12"
     >
       <div className="mx-auto max-w-7xl">
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
