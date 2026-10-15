@@ -137,7 +137,7 @@ export default function Experience() {
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
           Career & Academic Journey
         </p>
-        <h2 className="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+        <h2 className="mt-4 text-[26px] font-semibold tracking-tight text-white sm:text-[36px]">
           Experience that connects research and practice
         </h2>
         <p className="mt-4 max-w-2xl leading-7 text-slate-400">

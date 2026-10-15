@@ -26,16 +26,16 @@ export default function About() {
               About Me
             </p>
 
-            <h2 className="mt-5 max-w-xl text-4xl font-semibold leading-[1.12] tracking-[-0.04em] text-white sm:text-5xl">
-              Research that connects
+            <h2 className="mt-5 max-w-xl text-[26px] font-semibold leading-[1.12] tracking-[-0.04em] text-white sm:text-[36px]">
+              Advancing Medical AI
               <span className="block bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent">
-                intelligence and impact.
+                Through Vision &amp; Reasoning.
               </span>
             </h2>
 
             <p className="mt-5 max-w-lg text-base leading-7 text-slate-400">
-              Working at the intersection of visual intelligence,
-              multimodal reasoning, and generative learning.
+              Developing intelligent medical imaging systems through computer
+              vision, multimodal reasoning, and generative AI.
             </p>
 
             <div className="relative mt-8 overflow-hidden rounded-2xl border border-cyan-300/15 bg-gradient-to-br from-[#17253a] via-[#121d2e] to-[#0d1522] p-6 shadow-[0_24px_65px_rgba(0,0,0,0.20)] sm:p-7">

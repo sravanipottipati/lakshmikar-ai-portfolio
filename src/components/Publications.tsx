@@ -153,7 +153,7 @@ export default function Publications() {
           Research Contributions
         </p>
 
-        <h2 className="mt-4 text-4xl font-semibold text-white sm:text-5xl">
+        <h2 className="mt-4 text-[26px] font-semibold text-white sm:text-[36px]">
           Research & Publications
         </h2>
 

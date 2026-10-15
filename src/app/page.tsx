@@ -9,8 +9,8 @@ import Experience from "@/components/Experience";
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#080b12] text-white">
-      {/* Navigation */}
-      <header className="sticky top-0 z-50 mx-auto flex max-w-7xl items-center justify-between border-b border-white/[0.08] bg-[#080b12]/85 px-6 py-5 shadow-[0_8px_35px_rgba(0,0,0,0.12)] backdrop-blur-2xl lg:px-12">
+      {/* Desktop navigation */}
+      <header className="sticky top-0 z-50 mx-auto hidden max-w-7xl items-center justify-between border-b border-white/[0.08] bg-[#080b12]/85 px-6 py-5 shadow-[0_8px_35px_rgba(0,0,0,0.12)] backdrop-blur-2xl md:flex lg:px-12">
         <a href="#" className="text-xl font-bold tracking-tight">
           LR<span className="text-cyan-400">.</span>
         </a>
@@ -167,7 +167,7 @@ export default function Home() {
         </p>
 
         <div className="mt-5 flex flex-wrap items-end justify-between gap-6">
-          <h2 className="text-4xl font-semibold tracking-tight sm:text-5xl">
+          <h2 className="text-[26px] font-semibold tracking-tight sm:text-[36px]">
             Areas of Expertise
           </h2>
           <p className="max-w-md leading-7 text-slate-400">
@@ -270,7 +270,7 @@ export default function Home() {
             Let&apos;s Connect
           </p>
 
-          <h2 className="mx-auto mt-5 sm:mt-6 max-w-3xl text-4xl font-semibold leading-[1.1] tracking-[-0.04em] text-white sm:text-5xl">
+          <h2 className="mx-auto mt-5 sm:mt-6 max-w-3xl text-[26px] font-semibold leading-[1.1] tracking-[-0.04em] text-white sm:text-[36px]">
             Let&apos;s build the future of
             <span className="block bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent">
               intelligent systems.

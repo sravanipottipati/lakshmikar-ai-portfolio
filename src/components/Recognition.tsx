@@ -35,7 +35,7 @@ export default function Recognition() {
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
           Research Impact & Recognition
         </p>
-        <h2 className="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+        <h2 className="mt-4 text-[26px] font-semibold tracking-tight text-white sm:text-[36px]">
           Featured in University News
         </h2>
         <p className="mt-4 max-w-3xl leading-7 text-slate-400">

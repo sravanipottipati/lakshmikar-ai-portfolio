@@ -16,23 +16,32 @@ export default function MobileNavigation() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="sticky top-[80px] z-40 border-b border-white/10 bg-[#080b12]/95 backdrop-blur-2xl md:hidden">
-      <div className="flex items-center justify-between px-6 py-3">
-        <span className="text-sm font-medium text-slate-400">
-          Navigation
-        </span>
+    <div className="sticky top-0 z-50 border-b border-white/10 bg-[#080b12]/95 backdrop-blur-2xl md:hidden">
+      <div className="flex items-center justify-between gap-2 px-4 py-3">
+        <a href="#home" className="shrink-0 text-xl font-bold tracking-tight text-white">
+          LR<span className="text-cyan-400">.</span>
+        </a>
 
-        <button
+        <div className="flex items-center gap-2">
+          <a
+            href="mailto:lakshmikarpolamreddy@gmail.com"
+            className="whitespace-nowrap rounded-full border border-slate-700 px-3 py-2 text-xs font-medium text-white transition hover:border-cyan-400"
+          >
+            Get in touch ↗
+          </a>
+
+          <button
           type="button"
           aria-label={open ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={open}
           aria-controls="mobile-navigation-links"
           onClick={() => setOpen(!open)}
-          className="flex items-center gap-2 rounded-full border border-slate-700 px-4 py-2 text-sm font-medium text-white transition hover:border-cyan-400"
+          className="flex items-center gap-2 whitespace-nowrap rounded-full border border-slate-700 px-3 py-2 text-xs font-medium text-white transition hover:border-cyan-400"
         >
           <span>{open ? "Close" : "Menu"}</span>
           <span aria-hidden="true">{open ? "✕" : "☰"}</span>
-        </button>
+          </button>
+        </div>
       </div>
 
       {open && (
