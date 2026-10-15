@@ -71,22 +71,6 @@ const publications: Publication[] = [
   },
 ];
 
-const underReview: Publication[] = [
-  {
-    title: "MeshGuideSeg: 3D Mesh-Guided Geometry-aware Learning for Medical Image Segmentation via Attentive State-Space Modeling",
-    venue: "ICASSP 2027",
-    category: "3D Medical Image Segmentation",
-    status: "Under Review",
-  },
-  {
-    title: "3DMuseReasoner: 3D Multimodal Shape-Aware Reasoning Segmentation for Medical Images",
-    image: "/research/3dmusereasoner-architecture.png",
-    venue: "AAAI 2027",
-    category: "Multimodal AI & Medical Imaging",
-    status: "Under Review",
-  },
-];
-
 export default function Publications() {
   const [preview, setPreview] = useState<{
     src: string;
@@ -313,43 +297,7 @@ export default function Publications() {
           </div>
         </div>
 
-        {/* Papers under review */}
-        <div className="mt-16">
-          <div className="flex items-center justify-between gap-4">
-            <h3 className="text-2xl font-semibold text-white">
-              Papers Under Review
-            </h3>
-            <span className="text-sm text-slate-400">
-              {underReview.length} papers
-            </span>
-          </div>
 
-          <div className="mt-6 grid grid-cols-1 gap-5 md:grid-cols-2">
-            {underReview.map((paper) => (
-              <article
-                key={paper.title}
-                className="rounded-2xl border border-white/10 bg-gradient-to-br from-[#151f31] to-[#0d1420] p-6 transition-all duration-300 hover:border-cyan-300/35"
-              >
-                <div className="flex flex-wrap gap-2">
-                  <span className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs font-semibold text-cyan-300">
-                    {paper.venue}
-                  </span>
-                  <span className="rounded-full border border-white/10 px-3 py-1 text-xs text-slate-300">
-                    Under Review
-                  </span>
-                </div>
-
-                <h4 className="mt-4 text-lg font-semibold leading-snug text-white">
-                  {paper.title}
-                </h4>
-
-                <p className="mt-3 text-sm text-slate-400">
-                  {paper.category}
-                </p>
-              </article>
-            ))}
-          </div>
-        </div>
       </div>
 
       {preview && (
