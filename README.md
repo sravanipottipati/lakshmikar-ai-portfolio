@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lakshmikar Reddy Polamreddy | AI Research Portfolio
+
+Personal research portfolio showcasing work in artificial intelligence,
+computer vision, medical image analysis, multimodal reasoning, and
+generative AI.
+
+## About
+
+Lakshmikar Reddy Polamreddy is a PhD researcher in Computer Science
+and Mathematics at Yeshiva University, specializing in computer vision,
+multimodal learning, and medical artificial intelligence.
+
+This portfolio presents research contributions, academic experience,
+technical expertise, publications, and recognition.
+
+## Research Interests
+
+- Medical image analysis and segmentation
+- Computer vision and deep learning
+- Multimodal AI and vision-language reasoning
+- Generative AI and diffusion models
+- Geometric learning for medical imaging
+
+## Portfolio Features
+
+- Responsive desktop and mobile layouts
+- Research and publications showcase
+- Academic and professional experience
+- Technical expertise and research specializations
+- Academic recognition and university news
+- Downloadable curriculum vitae
+- Email contact and professional links
+- Accessible mobile navigation
+
+## Technology Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- ESLint
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Install Node.js and npm.
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/sravanipottipati/lakshmikar-ai-portfolio.git
+cd lakshmikar-ai-portfolio
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Run the following commands to validate the project:
 
-## Learn More
+```bash
+npm run lint
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+To start the production server locally:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contact
 
-## Deploy on Vercel
+**Lakshmikar Reddy Polamreddy**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Email: lakshmikarpolamreddy@gmail.com
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+All rights reserved. Research materials, publications, images,
+and other content remain subject to their respective copyrights.
